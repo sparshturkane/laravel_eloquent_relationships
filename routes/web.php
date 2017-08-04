@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "basicRoute";
 });
+
+Route::get('/articles', 'ArticleController@index');
+Route::get('/user/articles', 'ArticleController@userArticle');
